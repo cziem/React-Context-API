@@ -68,7 +68,8 @@ export class AppProvider extends React.Component {
         value={{
           ...this.state,
           toggleOpen: this.toggleOpen,
-          handleChange: this.handleChange
+          handleChange: this.handleChange,
+          handleSubmit: this.handleSubmit
         }}
       >
         {this.props.children}
