@@ -6,7 +6,7 @@ import Context from "../../context/AppProvider";
 export default () => (
   <Context.Consumer>
     {context => (
-      <Form onSubmit={context.handleSubmit}>
+      <Form onSubmit={context.handleSubmit} className="form_el">
         <Row form>
           <Col md={12}>
             <FormGroup>
@@ -17,6 +17,9 @@ export default () => (
                 placeholder="Fayvor George"
                 onChange={context.handleChange}
               />
+              {context.error.username && (
+                <span className="error">{context.error.username}</span>
+              )}
             </FormGroup>
           </Col>
         </Row>
@@ -30,6 +33,9 @@ export default () => (
                 placeholder="example@abc.com"
                 onChange={context.handleChange}
               />
+              {context.error.email && (
+                <span className="error">{context.error.email}</span>
+              )}
             </FormGroup>
           </Col>
         </Row>
@@ -42,6 +48,9 @@ export default () => (
                 name="password"
                 onChange={context.handleChange}
               />
+              {context.error.password && (
+                <span className="error">{context.error.password}</span>
+              )}
             </FormGroup>
           </Col>
         </Row>
