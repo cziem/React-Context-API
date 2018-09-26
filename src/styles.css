@@ -6,3 +6,16 @@
 h2 {
   padding-bottom: 1.5rem;
 }
+
+main {
+  margin-top: -2rem;
+  background: #111;
+  color: #ccc;
+  padding: 1rem;
+}
+
+.header_content {
+  text-align: center;
+  font-weight: 800;
+  padding-bottom: 1rem;
+}

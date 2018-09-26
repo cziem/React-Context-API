@@ -6,7 +6,7 @@ import Context from "../../context/AppProvider";
 export default () => (
   <Context.Consumer>
     {context => (
-      <Form onSubmit={context.handleSubmit}>
+      <Form onSubmit={context.handleSubmit} className="form_el">
         <Row form>
           <Col md={12}>
             <FormGroup>
