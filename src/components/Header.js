@@ -26,7 +26,11 @@ export default () => (
           {context.name} at your service.
         </p>
 
-        <Button size="lg" color="success">
+        <Button 
+          size="lg" 
+          color="success"
+          onClick={context.toggleOpen}
+        >
           Get Context
         </Button>
       </Jumbotron>
