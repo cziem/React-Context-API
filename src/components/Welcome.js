@@ -8,6 +8,9 @@ export default () => (
     {context => (
       <Row>
         <Col md={6}>
+          <p className="welcome">
+            Welcome <span className="username">{context.username}!</span> <br />{" "}
+            We hope you'd have fun learning React's Context API.
           <p>
             Welcome {context.username}! We hope you'd have fun learning React's
             Context API.
