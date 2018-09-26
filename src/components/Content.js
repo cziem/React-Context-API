@@ -8,8 +8,10 @@ export default () => (
     {context =>
       context.open && (
         <main>
-          <h3 className="display-5">Our New Buddie</h3>
-          <h4>Context API</h4>
+          <Container className="header_content">
+            <h3 className="display-5">Our New Buddie</h3>
+            <h4>Context API</h4>
+          </Container>
 
           <Container>
             <Row>
