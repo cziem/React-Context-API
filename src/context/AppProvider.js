@@ -51,13 +51,14 @@ export class AppProvider extends React.Component {
       error.password = "Password cannot be empty";
     }
 
-    return error;
+    this.setState(() => ({ error }));
+    return isValid;
   };
 
   handleSubmit = e => {
     e.preventDefault();
 
-    if (this.validate) {
+    if (this.validate()) {
       this.setState({ isLoggedIn: true });
     }
   };
