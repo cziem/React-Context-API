@@ -13,7 +13,6 @@ export class AppProvider extends React.Component {
     this.setState(prev => ({
       open: !prev.open
     }));
-    alert("clicked");
   };
 
   render() {
