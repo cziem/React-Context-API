@@ -6,7 +6,18 @@ export class AppProvider extends React.Component {
   state = {
     name: "Fayvor George",
     tech: "React's Context API",
-    open: false
+    open: false,
+    isLoggedIn: false,
+    username: "",
+    email: "",
+    password: ""
+  };
+
+  handleChange = e => {
+    e.persist();
+    this.setState(() => ({
+      [e.target.name]: e.target.value
+    }));
   };
 
   toggleOpen = () => {
@@ -20,7 +31,8 @@ export class AppProvider extends React.Component {
       <Context.Provider
         value={{
           ...this.state,
-          toggleOpen: this.toggleOpen
+          toggleOpen: this.toggleOpen,
+          handleChange: this.handleChange
         }}
       >
         {this.props.children}
