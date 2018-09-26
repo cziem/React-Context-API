@@ -27,7 +27,7 @@ export default () => (
         </p>
 
         <Button size="lg" color="success" onClick={context.toggleOpen}>
-          Get Context
+          {context.open ? "Close Context" : "Get Context"}
         </Button>
       </Jumbotron>
     )}
