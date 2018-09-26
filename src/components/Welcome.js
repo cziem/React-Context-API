@@ -11,6 +11,9 @@ export default () => (
           <p className="welcome">
             Welcome <span className="username">{context.username}!</span> <br />{" "}
             We hope you'd have fun learning React's Context API.
+          <p>
+            Welcome {context.username}! We hope you'd have fun learning React's
+            Context API.
           </p>
         </Col>
       </Row>
