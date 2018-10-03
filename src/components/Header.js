@@ -29,6 +29,10 @@ export default () => (
         <Button size="lg" color="success" onClick={context.toggleOpen}>
           {context.open ? "Close Context" : "Get Context"}
         </Button>
+        <span className="spacer" />
+        <Button size="lg" color="info">
+          Change Theme
+        </Button>
       </Jumbotron>
     )}
   </Context.Consumer>

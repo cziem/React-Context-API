@@ -34,3 +34,7 @@ main {
   color: #eb3f3f;
   font-size: smaller;
 }
+
+.spacer {
+  padding: 0 1rem;
+}
