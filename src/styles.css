@@ -33,6 +33,7 @@ main {
 .error {
   color: #eb3f3f;
   font-size: smaller;
+  padding-bottom: 1rem;
 }
 
 .spacer {

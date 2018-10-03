@@ -1,7 +1,5 @@
 import React from "react";
-
 import { Themes } from "../themes/ThemeStyles";
-
 const { Provider, Consumer } = React.createContext();
 
 class ThemeProvider extends React.Component {
