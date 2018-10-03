@@ -35,3 +35,7 @@ main {
   font-size: smaller;
   padding-bottom: 1rem;
 }
+
+.spacer {
+  padding: 0 1rem;
+}
